@@ -1,7 +1,6 @@
 variable "region" {
   description = "The AWS region to bootstrap"
   type        = string
-  default     = "us-east-2"
 }
 
 variable "role_arn" {
@@ -13,4 +12,6 @@ variable "role_arn" {
 variable "trust_account_id" {
   description = "The AWS account ID to trust"
   type        = string
+  default     = null
+  nullable    = true
 }
