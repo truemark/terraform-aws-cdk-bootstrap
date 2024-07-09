@@ -3,15 +3,16 @@ variable "region" {
   type        = string
 }
 
-variable "role_arn" {
+variable "cfn_execution_policy_arns" {
   description = "The ARN of the role to assume"
-  type        = string
-  default     = "arn:aws:iam::aws:policy/AdministratorAccess"
+  type        = list(string)
+  default     = null
+  nullable    = true
 }
 
-variable "trust_account_id" {
+variable "trust_account_ids" {
   description = "The AWS account ID to trust"
-  type        = string
+  type        = list(string)
   default     = null
   nullable    = true
 }

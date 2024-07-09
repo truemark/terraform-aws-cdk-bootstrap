@@ -29,9 +29,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_cfn_execution_policy_arns"></a> [cfn\_execution\_policy\_arns](#input\_cfn\_execution\_policy\_arns) | The ARN of the role to assume | `list(string)` | `null` | no |
 | <a name="input_region"></a> [region](#input\_region) | The AWS region to bootstrap | `string` | n/a | yes |
-| <a name="input_role_arn"></a> [role\_arn](#input\_role\_arn) | The ARN of the role to assume | `string` | `"arn:aws:iam::aws:policy/AdministratorAccess"` | no |
-| <a name="input_trust_account_id"></a> [trust\_account\_id](#input\_trust\_account\_id) | The AWS account ID to trust | `string` | `null` | no |
+| <a name="input_trust_account_ids"></a> [trust\_account\_ids](#input\_trust\_account\_ids) | The AWS account ID to trust | `list(string)` | `null` | no |
 
 ## Outputs
 
